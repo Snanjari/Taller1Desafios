@@ -1,0 +1,28 @@
+"""
+Crear un archivo conversiones.py y una estructura de datos apropiada que permita
+ingresar tasas de conversión. Las distintas tasas de conversión se deben ingresar
+mediante sys.argv en el siguiente orden: Sol, Peso Argentino, Dólar Americano.
+"""
+#Para ello considere las siguientes tasas de conversión de Peso Chileno:
+#● a Sol peruano: 0.0046
+#● a Peso Argentino: 0.093
+#● a Dólar Americano: 0.0013
+#Argv[x] * argv[y]
+
+#Variables = 
+ 
+import sys
+
+sol_peruano = 0.0046
+peso_argentino = 0.093
+dolar_americano = 0.0013
+peso_chileno = 10000
+divisas = ["Soles peruanos", "Peso Argentino", "Dólar Americano", "Peso Chileno"]
+
+sys.argv = [sol_peruano, peso_argentino, dolar_americano, peso_chileno]
+print(divisas)
+print(sys.argv)
+print("Los 10000 pesos chilenos equivalen a:")
+print((sol_peruano * peso_chileno), "Soles")
+print((peso_argentino * peso_chileno), "Pesos Argentinos")
+print((dolar_americano * peso_chileno), "Dolares Americanos")
