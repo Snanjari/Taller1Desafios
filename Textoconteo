@@ -1,0 +1,19 @@
+"""
+El texto lorem ipsum es un texto de prueba que se utiliza para demostrar distintas
+tipografías además de usarse para rellenar espacios que requieran largos textos.
+¿Cuántas palabras componen este texto?
+"""
+
+
+def count_words( lorem_ipsum ):
+    
+    with open("C:/Users/Dell/OneDrive/Escritorio/Taller/texto", "r") as file: 
+        #lectura del texto:
+        contenido  = file.read()
+        print(contenido)
+        # Conteo de las palabras:
+        palabras = contenido.split("")
+        print(count_words(file))
+        num_palabras = len(palabras)
+        print("El número de caracteres distintos es :" + (str(palabras)))
+        print("El número de palabras distintas de" + lorem_ipsum + " son: " + (str( num_palabras)))
